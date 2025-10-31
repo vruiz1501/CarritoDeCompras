@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo_rosa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductosActivity">
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Listado de Productos"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Camiseta deportiva - $40.000"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorTextPrimary"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerProductos"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btnAgregarCamiseta"
+                    android:text="Agregar al carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotonPrincipal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tenis blancos - $120.000"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <Button
+                    android:id="@+id/btnAgregarTenis"
+                    android:text="Agregar al carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotonPrincipal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chaqueta impermeable - $95.000"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <Button
+                    android:id="@+id/btnAgregarChaqueta"
+                    android:text="Agregar al carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotonPrincipal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gorra ajustable - $30.000"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorTextPrimary" />
+
+                <Button
+                    android:id="@+id/btnAgregarGorra"
+                    android:text="Agregar al carrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BotonPrincipal"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnIrCarrito"
+                android:text="Ver Carrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
