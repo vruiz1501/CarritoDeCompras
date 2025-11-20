@@ -27,17 +27,28 @@ class ProductoAdapter(
 
     override fun onBindViewHolder(holder: ProductoViewHolder, position: Int) {
         val producto = listaProductos[position]
+<<<<<<< HEAD
 
         holder.imgProducto.setImageResource(producto.imagenResId)
         holder.txtNombre.text = producto.nombre
         holder.txtPrecio.text = producto.precio.toString()
 
+=======
+        holder.imgProducto.setImageResource(producto.imagenResId)
+        holder.txtNombre.text = producto.nombre
+        holder.txtPrecio.text = producto.precio
+
+        // 👉 Al hacer clic en cualquier parte del producto, lo agrega al carrito
+>>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
         holder.itemView.setOnClickListener {
             onAgregarClick(producto)
             Toast.makeText(holder.itemView.context, "Agregado al carrito", Toast.LENGTH_SHORT).show()
         }
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
     override fun getItemCount() = listaProductos.size
 }

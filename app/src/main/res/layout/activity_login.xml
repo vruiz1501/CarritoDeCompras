@@ -53,5 +53,8 @@
         android:backgroundTint="@color/teal_700"
         android:textColor="@android:color/white" />
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
 </LinearLayout>
