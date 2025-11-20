@@ -2,13 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-<<<<<<< HEAD
-    <!-- ✅ Permisos de ubicación SIEMPRE afuera del application -->
+    <!-- Permisos de ubicación -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-=======
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,35 +16,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-<<<<<<< HEAD
 
-=======
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
-        <activity
-            android:name=".ProductosActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Producto"
-            android:exported="false" />
-        <activity
-            android:name=".ProductoAdapter"
-            android:exported="false" />
-        <activity
-            android:name=".ui.theme.ProductoAdapte"
-            android:exported="false" />
+        <activity android:name=".ProductosActivity" android:exported="false" />
+        <activity android:name=".Producto" android:exported="false" />
+        <activity android:name=".ProductoAdapter" android:exported="false" />
+        <!-- Corrige el nombre si existe: ProductoAdapte -> ProductoAdapter -->
         <activity android:name=".CarritoActivity" />
         <activity android:name=".RegistroActivity" />
-<<<<<<< HEAD
 
-=======
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
         <activity
             android:name=".LoginActivity"
             android:exported="true"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -55,12 +37,3 @@
     </application>
 
 </manifest>
-=======
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
-</manifest>
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242

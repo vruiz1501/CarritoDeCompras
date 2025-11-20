@@ -1,142 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ProductosActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <!-- Ubicación -->
-        <TextView
-            android:id="@+id/txtUbicacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ubicación: --"
-            android:textSize="18sp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/camisa"
-                android:layout_marginRight="10dp"/>
-
-            <Button
-                android:id="@+id/btnCamiseta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Camiseta deportiva - $40.000"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/tennis"
-                android:layout_marginRight="10dp"/>
-
-            <Button
-                android:id="@+id/btnTenis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tenis blancos - $120.000"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/chaqueta"
-                android:layout_marginRight="10dp"/>
-
-            <Button
-                android:id="@+id/btnChaqueta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Chaqueta impermeable - $95.000"/>
-        </LinearLayout>
-
-        <!-- PRODUCTO 4 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/gorra"
-                android:layout_marginRight="10dp"/>
-
-            <Button
-                android:id="@+id/btnGorra"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Gorra ajustable - $30.000"/>
-        </LinearLayout>
-
-
-        <Button
-            android:id="@+id/btnIrCarrito"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ver Carrito" />
-
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerProductos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
-</ScrollView>
-=======
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainProductos"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ProductosActivity">
+
+    <TextView
+        android:id="@+id/txtUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubicación: --"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/btnIrCarrito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Carrito" />
+        android:text="Ver carrito"
+        android:layout_marginTop="12dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerProductos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="8dp" />
 </LinearLayout>
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242

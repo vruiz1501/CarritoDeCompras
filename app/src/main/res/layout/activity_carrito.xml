@@ -7,34 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".CarritoActivity">
 
-<<<<<<< HEAD
     <LinearLayout
-=======
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
         android:orientation="vertical"
         android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fondo_rosa">
 
-<<<<<<< HEAD
-        <!-- 🔁 CAMBIO IMPORTANTE: ListView → RecyclerView -->
+        <!-- RecyclerView en lugar de ListView -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerCarrito"
-=======
-        <ListView
-            android:id="@+id/listCarrito"
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"/>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242
         <TextView
             android:id="@+id/txtCarrito"
             android:layout_width="match_parent"
@@ -61,9 +47,5 @@
             android:textColor="#FFFFFF" />
 
     </LinearLayout>
-<<<<<<< HEAD
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> bc547816ffba9d7318a0de34bba542e1e7d0d242

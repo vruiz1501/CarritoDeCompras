@@ -109,4 +109,13 @@ class DBHelper(context: Context) :
         val db = writableDatabase
         return db.delete("productos", "id=?", arrayOf(id.toString())) > 0
     }
+
+    fun existeProducto(nombre: String): Boolean {
+        val db = readableDatabase
+        val cursor = db.rawQuery("SELECT id FROM productos WHERE nombre = ?", arrayOf(nombre))
+        val existe = cursor.count > 0
+        cursor.close()
+        db.close()
+        return existe
+    }
 }
